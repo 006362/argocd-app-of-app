@@ -5,12 +5,12 @@ metadata:
   namespace: argocd
   finalizers:
   - resource-finalizer.argocd.argoproj.io
-  spec:
-    destination:
-      namespace: argo-apps-2
-      server: https://kubernetes.default.svc
-    project: default
-    source:
-      path: my-app/app-2
-      repoURL: https://github.com/006362/argocd-app-of-app.git
-      tragetRevision: HEAD
+spec:
+  destination:
+    namespace: argo-apps-2
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: my-app/app-2
+    repoURL: https://github.com/006362/argocd-app-of-app.git
+    tragetRevision: HEAD
